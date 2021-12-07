@@ -32,11 +32,10 @@ transformations = (standard_transformations + (split_symbols, implicit_multiplic
 funzione = parse_expr(funzione, transformations=transformations)
 
 x = symbols('x')    # dico che ogni X è simbolo
+
 # DerivataFunzione = diff(funzione, x)  # calola la derivata
-
-print("\n")
-pprint(diff(funzione, x))
-print("\n")
-
-
 # print(str(DerivataFunzione).replace("**", "^"))    # stampa la funzione derivata
+
+print("\n")
+pprint(diff(funzione, x))   # calcola e stampa in modo carino la funzione derivata
+print("\n")
