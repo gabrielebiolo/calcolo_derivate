@@ -5,8 +5,8 @@ from sympy.parsing.sympy_parser import (split_symbols,
                                         convert_xor)
 import sympy.printing as printing
 
-print("Inserire la funzione: ")
-funzione = input()  # ricavo in input tutta la funzione
+
+funzione = input("Inserire la funzione: ")  # ricavo in input tutta la funzione
 funzione = funzione.strip() # tolgo gli spazi alle estremità
 
 # funzione = funzione.replace("^", "**")  # sostituisco gli esponenti tradizionali a come vuole python
