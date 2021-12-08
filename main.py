@@ -5,8 +5,7 @@ from sympy.parsing.sympy_parser import (split_symbols,
                                         convert_xor)
 import sympy.printing as printing
 
-print("Inserire la funzione: ")
-funzione = input()  # ricavo in input tutta la funzione
+funzione = input("Inserire la funzione: ")  # ricavo in input tutta la funzione
 funzione = funzione.strip() # tolgo gli spazi alle estremità
 
 # funzione = funzione.replace("^", "**")  # sostituisco gli esponenti tradizionali a come vuole python
@@ -26,5 +25,7 @@ x = symbols('x')    # dico che ogni X è simbolo
 # print(str(DerivataFunzione).replace("**", "^"))    # stampa la funzione derivata
 
 print("\n")
-pprint(diff(funzione, x))   # calcola e stampa in modo carino la funzione derivata
+pprint(diff(funzione, x), use_unicode=False)   # calcola e stampa in modo carino la funzione derivata
 print("\n")
+
+input("Premere un tasto qualsiasi per chiudere.")
